@@ -1,0 +1,15 @@
+{
+  "name": "lotide",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lotide.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brycemcl/lotide.git"
+  },
+  "author": "",
+  "type": "module"
+}
