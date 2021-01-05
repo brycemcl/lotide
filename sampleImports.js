@@ -1,5 +1,4 @@
-import * as lotide from './lotide.mjs';
-
+const lotide = require('./lotide');
 
 console.log(lotide.head([1, 3, 5,]));
 lotide.assertEqual("Lighthouse Labs", "Bootcamp");

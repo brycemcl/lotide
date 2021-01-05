@@ -11,5 +11,7 @@
     "url": "git+https://github.com/brycemcl/lotide.git"
   },
   "author": "",
-  "type": "module"
+  "dependencies": {
+    "lodash": "^4.17.20"
+  }
 }
