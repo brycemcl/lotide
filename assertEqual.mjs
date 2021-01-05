@@ -8,7 +8,7 @@ export const assertEqual = function (actual, expected) {
 };
 
 // TEST CODE
-import { isDebug } from './isDebug.js';
+import { isDebug } from './isDebug.mjs';
 isDebug((() => {
   assertEqual("Lighthouse Labs", "Bootcamp");
   assertEqual(1, 1);
