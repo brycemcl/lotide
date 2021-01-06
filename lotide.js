@@ -4,6 +4,7 @@ const { tail } = require('./tail');
 const { isEqual } = require('./isEqual');
 const { eqArrays } = require('./eqArrays');
 const { assertArraysEqual } = require('./assertArraysEqual');
+const { flatten } = require('./flatten');
 module.exports =
 {
   assertEqual,
@@ -11,5 +12,6 @@ module.exports =
   tail,
   isEqual,
   eqArrays,
-  assertArraysEqual
+  assertArraysEqual,
+  flatten
 };
