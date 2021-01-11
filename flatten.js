@@ -1,4 +1,4 @@
-module.exports.flatten = (arrayArg) => {
+const flatten = (arrayArg) => {
 
   const isArrayShallow = ((arrayArg) => {
     let returnBoolean = true;
@@ -29,8 +29,4 @@ module.exports.flatten = (arrayArg) => {
   return flattenArray(arrayArg);
 };
 
-
-
-// const flatten = module.exports.flatten;
-// const { assertEqual } = require('./assertEqual');
-// assertEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);
+module.exports = { flatten };

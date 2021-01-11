@@ -1,4 +1,4 @@
-module.exports.isEqual = (actual, expected) => {
+const isEqual = (actual, expected) => {
 
   //https://stackoverflow.com/questions/5467129/sort-javascript-object-by-key
   const sortObject = (object) => {
@@ -23,3 +23,5 @@ module.exports.isEqual = (actual, expected) => {
     return false;
   }
 };
+
+module.exports = { isEqual };

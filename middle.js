@@ -1,4 +1,4 @@
-module.exports.middle = (arrayArg) => {
+const middle = (arrayArg) => {
   return arrayArg.filter((item, index, array) => {
     if (array.length < 3) {
       // console.log("false", array.length, index + 1);
@@ -16,13 +16,4 @@ module.exports.middle = (arrayArg) => {
   });
 };
 
-
-// const { assertArraysEqual } = require('./assertArraysEqual');
-// const middle = module.exports.middle;
-// assertArraysEqual(middle([1]), []);
-// assertArraysEqual(middle([1, 2]), []);
-// assertArraysEqual(middle([1, 2, 3]), [2]);
-// assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]);
-// assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]);
-// assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
-
+module.exports = { middle };

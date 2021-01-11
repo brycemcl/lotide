@@ -1,4 +1,4 @@
-module.exports.assertObjectsEqual = (actual, expected) => {
+const assertObjectsEqual = (actual, expected) => {
   const { isEqual } = require('./isEqual');
   const inspect = require('util').inspect;
   if (isEqual(actual, expected)) {
@@ -8,11 +8,4 @@ module.exports.assertObjectsEqual = (actual, expected) => {
   }
 };
 
-
-// const assertObjectsEqual = module.exports.assertObjectsEqual;
-// const ab = { a: "1", b: "2" };
-// const ba = { b: "2", a: "1" };
-// assertObjectsEqual(ab, ba);
-
-// const abc = { a: "1", b: "2", c: "3" };
-// assertObjectsEqual(ab, abc);
+module.exports = { assertObjectsEqual };
