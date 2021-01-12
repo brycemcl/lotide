@@ -2,7 +2,7 @@
   "name": "lotide",
   "version": "0.0.2",
   "description": "",
-  "main": "lotide.js",
+  "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
