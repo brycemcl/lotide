@@ -1,25 +1,22 @@
+const assert = require('chai').assert;
 const { tail } = require('../tail');
-const { assertEqual } = require('../assertEqual');
 
 
-console.log(typeof tail([5, 6, 7])[0]);
-console.log(typeof ([6, 7])[0]);
-console.log(assertEqual([1], [1]));
-console.log([6, 7]);
-assertEqual(tail([5, 6, 7]), [6, 7]);
-assertEqual(tail(["Hello", "Lighthouse", "Labs"]), "Hello");
-assertEqual(tail([0]), 0);
-assertEqual(tail([]), undefined);
+describe('', () => {
+  it('typeof is number (1)', () => {
 
-
-/*
-number
-number
-✅✅✅ Assertion Passed: 1 === 1
-undefined
-[ 6, 7 ]
-✅✅✅ Assertion Passed: 6,7 === 6,7
-🛑🛑🛑 Assertion Failed: Lighthouse,Labs !== Hello
-🛑🛑🛑 Assertion Failed:  !== 0
-🛑🛑🛑 Assertion Failed:  !== undefined
-*/
+    assert.typeOf(tail([5, 6, 7])[0], "number");
+  });
+  it('tail is equal', () => {
+    assert.deepEqual(tail([5, 6, 7]), [6, 7]);
+  });
+  it('tail is not equal(1)', () => {
+    assert.notDeepEqual(tail(["Hello", "Lighthouse", "Labs"]), "Hello");
+  });
+  it('tail is not equal(2)', () => {
+    assert.notDeepEqual(tail([0]), 0);
+  });
+  it('tail is not equal(3)', () => {
+    assert.notDeepEqual(tail([]), undefined);
+  });
+});
